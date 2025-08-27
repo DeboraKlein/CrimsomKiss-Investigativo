@@ -50,7 +50,7 @@ _
 
 ## 🔗 Link para o Dashboard Interativo
 
-> _Insira aqui o link público ou compartilhado do Power BI_
+> _[Insira aqui o link público ou compartilhado do Power BI_](https://app.powerbi.com/view?r=eyJrIjoiZTUwYjRjOTItZDAzZi00YWFhLWE2YjEtZGQwM2I2NWFiOTQyIiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9)_
 
 [🔗 Acesse o Dashboard Crimson Kiss](https://seulinkdopainel.com)
 
