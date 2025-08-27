@@ -58,19 +58,29 @@ _
 
 ## 📁 Estrutura do Projeto
 
-CrimsonKiss-Investigativo/ 
-├── scripts/ 
-│ ├── create_tables.sql 
-│ ├── insert_data.sql 
-│ ├── views.sql
-│ ├── procedures.sql 
-├── dashboard/ 
-│ ├── imagens/ 
-│ └── layout_pbi.pbix 
+CrimsonKiss-Investigativo/
+│
+├── scripts/
+│   ├── create_tables.sql
+│   ├── insert_data.sql
+│   ├── views.sql
+│   ├── procedures.sql
+│   ├── triggers.sql
+│
+├── dashboard/
+│   ├── imagens/
+│   │   ├── painel_geral.png
+│   │   ├── roi_por_influencer.png
+│   │   ├── vendas_por_mes.png
+│   └── layout_pbi.pbix (se quiser incluir o arquivo do Power BI)
+│
 ├── docs/
-│ ├── relatorio_investigativo.md 
-│ ├── insights_recomendacoes.md 
-├── README.md
+│   ├── README.md
+│   ├── relatorio_investigativo.md
+│   ├── insights_recomendacoes.md
+│
+├── LICENSE
+└── .gitignore
 
 
 ---
