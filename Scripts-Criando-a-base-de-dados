@@ -42,3 +42,16 @@ CREATE TABLE CampanhasMarketing (
     ROI DECIMAL(5,2),
     Status VARCHAR(50) -- 'Ativa', 'Pausada', etc.
 
+-- 🧱 Criando a Tabela de Logs
+-- Essa tabela vai guardar informações como o tipo de alerta, quando aconteceu e detalhes 
+-- adicionais.
+
+CREATE TABLE LogAlertas (
+    IdAlerta INT PRIMARY KEY IDENTITY(1,1),
+    TipoAlerta VARCHAR(100),
+    DataAlerta DATETIME DEFAULT GETDATE(),
+    Detalhes TEXT
+);
+
+SELECT Status, DataFim FROM CampanhasMarketing WHERE Influencer = 'Duda Glow';
+
