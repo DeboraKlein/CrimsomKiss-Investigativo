@@ -1,0 +1,47 @@
+-- 📉 Etapa 3: Identificar quedas significativas nas vendas
+
+-- 1. Criar uma procedure para detectar quedas
+-- Comparar o total vendido em dias consecutivos e identificar quando há uma queda acima de um 
+-- certo percentual.
+
+CREATE PROCEDURE usp_RelatorioDiario
+AS
+BEGIN
+    SELECT 
+        V.Produto,
+        CONVERT(date, V.DataVenda) AS Data,
+        COUNT(*) AS TotalVendas,
+        ISNULL(AVG(A.Nota), 0) AS MediaAvaliacoes,
+        CASE 
+            WHEN COUNT(*) < 100 OR ISNULL(AVG(A.Nota), 0) < 3 THEN '⚠️ Alerta'
+            ELSE '✅ OK'
+        END AS Status
+    FROM Vendas V
+    LEFT JOIN Avaliacoes A
+        ON V.Produto = A.Produto AND CONVERT(date, V.DataVenda) = A.DataAvaliacao
+    WHERE V.DataVenda = CONVERT(date, GETDATE())
+    GROUP BY V.Produto, CONVERT(date, V.DataVenda);
+END;
+
+EXEC usp_RelatorioDiario;
+;
+
+CREATE PROCEDURE usp_InfluencerImpacto
+AS
+BEGIN
+    SELECT 
+        C.Influencer,
+        C.Produto,
+        SUM(CASE WHEN V.DataVenda >= C.DataInicio AND V.DataVenda <= C.DataFim THEN V.ValorTotal ELSE 0 END) AS VendasDuranteCampanha,
+        SUM(CASE WHEN V.DataVenda < C.DataInicio THEN V.ValorTotal ELSE 0 END) AS VendasAntesCampanha,
+        ROUND(
+            (SUM(CASE WHEN V.DataVenda >= C.DataInicio AND V.DataVenda <= C.DataFim THEN V.ValorTotal ELSE 0 END) * 1.0) /
+            NULLIF(SUM(CASE WHEN V.DataVenda < C.DataInicio THEN V.ValorTotal ELSE 0 END), 0) * 100, 2
+        ) AS ImpactoPercentual
+    FROM CampanhasMarketing C
+    LEFT JOIN Vendas V ON C.Produto = V.Produto
+    GROUP BY C.Influencer, C.Produto;
+END;
+
+
+EXEC usp_InfluencerImpacto
