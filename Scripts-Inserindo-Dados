@@ -1,0 +1,27 @@
+-- Inserindo dados
+INSERT INTO Vendas VALUES 
+(1, '2025-07-01', 'Online', 'Crimson Kiss', 20, 599.80),
+(2, '2025-07-02', 'Loja Física', 'Crimson Kiss', 15, 449.85),
+(3, '2025-08-01', 'Online', 'Crimson Kiss', 5, 149.95), -- queda começa
+(4, '2025-08-02', 'Loja Física', 'Crimson Kiss', 2, 59.98),
+(5, '2025-08-03', 'Online', 'Crimson Kiss', 1, 29.99);
+
+
+INSERT INTO Avaliacoes VALUES 
+(1, 'Crimson Kiss', 5, 'A cor é linda, dura o dia todo!', '2025-07-01', '192.168.0.1'),
+(2, 'Crimson Kiss', 1, 'Me deu alergia, fiquei com os lábios inchados!', '2025-08-01', '192.168.0.2'),
+(3, 'Crimson Kiss', 2, 'Reação estranha, não recomendo.', '2025-08-02', '192.168.0.3'),
+(4, 'Crimson Kiss', 1, 'Minha irmã teve uma reação horrível!', '2025-08-03', '192.168.0.4'),
+(5, 'Crimson Kiss', 5, 'Sempre compro, nunca tive problema.', '2025-07-15', '192.168.0.5');
+
+INSERT INTO Estoque VALUES 
+(101, 'Crimson Kiss', 25, 'Zerado'), -- erro de sistema
+(102, 'Crimson Kiss', 0, 'Zerado'),
+(103, 'Crimson Kiss', 10, 'Disponível'),
+(104, 'Crimson Kiss', 18, 'Zerado'), -- erro de sistema
+(105, 'Crimson Kiss', 0, 'Zerado');
+
+INSERT INTO CampanhasMarketing VALUES 
+(1, 'Crimson Kiss', 'Lia Glam', '2025-06-15', '2025-07-15', 3.5, 'Ativa'),
+(2, 'Crimson Kiss', 'Duda Glow', '2025-07-20', '2025-08-01', 0.8, 'Pausada'), -- influenciadora cancelada
+(3, 'Crimson Kiss', 'Vivi Shine', '2025-08-05', '2025-08-20', 1.2, 'Ativa');
