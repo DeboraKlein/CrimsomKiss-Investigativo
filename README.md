@@ -42,5 +42,21 @@ Identificar os fatores que levaram à queda de vendas do produto *Crimson Kiss*,
 
 ## 🖼️ Print do Dashboard
 
-> _Insira aqui uma imagem do painel Power BI com os principais visuais_
+> _<img width="1334" height="737" alt="Power BI Desktop 26_08_2025 21_41_23" src="https://github.com/user-attachments/assets/f89c07ea-1201-4c70-bf77-56618db0517c" />
+_
+>
+> 
+---
+
+## 🔗 Link para o Dashboard Interativo
+
+> _Insira aqui o link público ou compartilhado do Power BI_
+
+[🔗 Acesse o Dashboard Crimson Kiss](https://seulinkdopainel.com)
+
+---
+
+## 📁 Estrutura do Projeto
+
+
 
