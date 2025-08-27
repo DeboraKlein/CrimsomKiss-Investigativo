@@ -45,3 +45,38 @@ END;
 
 
 EXEC usp_InfluencerImpacto
+
+-- 📉 Alerta 3: Queda de Vendas (Procedure programada)
+-- A sp_AlertaQuedaVendas entra como um alerta proativo, que pode ser agendado pra rodar 
+-- diariamente.
+
+
+CREATE PROCEDURE sp_AlertaQuedaVendas
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    WITH VendasOrdenadas AS (
+        SELECT 
+            DataVenda,
+            SUM(Quantidade) AS TotalVendido,
+            ROW_NUMBER() OVER (ORDER BY DataVenda) AS DiaID
+        FROM Vendas
+        GROUP BY DataVenda
+    ),
+    Comparacao AS (
+        SELECT 
+            v1.DataVenda AS DiaAtual,
+            v1.TotalVendido,
+            v2.TotalVendido AS TotalAnterior,
+            ((v1.TotalVendido - v2.TotalVendido) * 1.0 / NULLIF(v2.TotalVendido, 0)) * 100 AS PercentualQueda
+        FROM VendasOrdenadas v1
+        JOIN VendasOrdenadas v2 ON v1.DiaID = v2.DiaID + 1
+    )
+    SELECT *
+    FROM Comparacao
+    WHERE PercentualQueda < -20; -- alerta para quedas acima de 20%
+END;
+
+
+EXEC sp_AlertaQuedaVendas;
