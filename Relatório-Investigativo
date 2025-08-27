@@ -1,0 +1,84 @@
+# 🕵️‍♀️ Relatório Investigativo — Crimson Kiss
+
+## 🧭 Contexto
+
+Em julho, o batom *Crimson Kiss* figurava entre os cinco produtos mais vendidos da linha. No entanto, em agosto, as vendas despencaram de uma média de 20 unidades/dia para apenas 1. O objetivo deste relatório é investigar as causas dessa queda abrupta e propor ações corretivas.
+
+---
+
+## 🔍 Etapas da Investigação
+
+### 1. Análise de Vendas
+- Gráfico de linha mostra queda acentuada a partir de 01/08
+- Produto saiu do ranking de mais vendidos em menos de uma semana
+
+### 2. Campanhas de Influenciadores
+- **Duda Glow**: campanha pausada em 01/08, mesmo dia da primeira reclamação
+  - ROI abaixo do esperado
+  - Influenciadora deixou de mencionar o produto após críticas
+- **Vivi Shine**: campanha ativa com ROI superior, mesmo em meio à crise
+
+### 3. Avaliações Negativas
+- Três reclamações registradas entre 01/08 e 03/08
+- Notas: 1, 2 e 1
+- Comentários mencionam:
+  - Reações alérgicas
+  - Textura alterada
+  - Frustração com a marca
+
+### 4. Estoque Inconsistente
+- Lojas 101 e 104 com estoque físico de 43 unidades
+- Sistema marcava como “Zerado”
+- Falha no sincronismo entre sistema e inventário real
+
+---
+
+## 📌 Principais Descobertas
+
+| Fator                     | Impacto nas Vendas | Evidência Principal                     |
+|--------------------------|--------------------|-----------------------------------------|
+| Reclamações de clientes  | Alto               | Notas baixas e comentários negativos    |
+| Falha de estoque         | Alto               | Produto indisponível no sistema         |
+| Influenciadora ausente   | Médio              | Pausa na campanha e silêncio digital    |
+| Concorrência direta      | Baixo              | Sem alteração significativa de mercado  |
+
+---
+
+## 🧪 Hipóteses Confirmadas
+
+- A reputação digital foi abalada por relatos de reações adversas
+- O sistema de estoque falhou em refletir a disponibilidade real
+- A ausência de comunicação pós-crise agravou a percepção negativa
+
+---
+
+## ✅ Recomendações
+
+1. **Auditoria no sistema de estoque**
+   - Verificar sincronismo entre estoque físico e digital
+
+2. **Análise da fórmula do produto**
+   - Rastrear lotes com possíveis alterações químicas
+
+3. **Plano de recuperação de imagem**
+   - Comunicado oficial
+   - Campanha com influenciadora confiável
+   - Reposição gratuita para clientes afetados
+
+4. **Monitoramento contínuo**
+   - Dashboard atualizado em tempo real
+   - Alertas para quedas abruptas de vendas
+
+---
+
+## 📎 Anexos
+
+- [Dashboard Interativo](https://seulinkdopainel.com)
+- Printscreen do painel com destaque para reclamações e estoque
+
+---
+
+## ✍️ Autoria
+
+Relatório elaborado por **Debora**, com foco em análise de dados, storytelling investigativo e inteligência de mercado.
+
