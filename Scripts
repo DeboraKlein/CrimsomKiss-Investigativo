@@ -1,0 +1,44 @@
+-- Criando Base de Dados
+CREATE DATABASE BatomInvestigation;
+GO
+USE BatomInvestigation;
+GO
+
+-- Tabela de Vendas
+CREATE TABLE Vendas (
+    IdVenda INT PRIMARY KEY,
+    DataVenda DATE,
+    Canal VARCHAR(50), -- 'Online' ou 'Loja Física'
+    Produto VARCHAR(100),
+    Quantidade INT,
+    ValorTotal DECIMAL(10,2)
+);
+
+-- Tabela de Avaliações
+CREATE TABLE Avaliacoes (
+    IdAvaliacao INT PRIMARY KEY,
+    Produto VARCHAR(100),
+    Nota INT,
+    Comentario TEXT,
+    DataAvaliacao DATE,
+    IPCliente VARCHAR(50)
+);
+
+-- Tabela de Estoque
+CREATE TABLE Estoque (
+    IdLoja INT,
+    Produto VARCHAR(100),
+    QuantidadeEstoque INT,
+    StatusSistema VARCHAR(20) -- 'Disponível', 'Zerado', etc.
+);
+
+-- Tabela de Campanhas de Marketing
+CREATE TABLE CampanhasMarketing (
+    IdCampanha INT PRIMARY KEY,
+    Produto VARCHAR(100),
+    Influencer VARCHAR(100),
+    DataInicio DATE,
+    DataFim DATE,
+    ROI DECIMAL(5,2),
+    Status VARCHAR(50) -- 'Ativa', 'Pausada', etc.
+
