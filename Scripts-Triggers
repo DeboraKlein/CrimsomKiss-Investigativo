@@ -1,0 +1,38 @@
+-- 🧨 Etapa 4: Triggers e Alertas Inteligentes
+-- ✅ Trigger 1: Alerta de Avaliação Ruim
+-- Dispara quando uma avaliação com nota ≤ 2 é inserida. Pode registrar em uma tabela de alertas 
+-- ou enviar notificação.
+
+CREATE TRIGGER trg_AlertaAvaliacaoRuim
+ON Avaliacoes
+AFTER INSERT
+AS
+BEGIN
+    IF EXISTS (
+        SELECT 1 FROM inserted WHERE Nota <= 2
+    )
+    BEGIN
+        PRINT '⚠️ Alerta: Avaliação negativa registrada!'
+        -- Aqui você pode inserir em uma tabela de log ou acionar outro processo
+    END
+END;
+
+-- 🔄 Trigger 2: Atualização de Status de Estoque
+-- Atualiza o campo StatusEstoque automaticamente com base na Quantidade.
+
+CREATE TRIGGER trg_AtualizaStatusEstoque
+ON Estoque
+AFTER INSERT, UPDATE
+AS
+BEGIN
+    UPDATE E
+    SET StatusEstoque = 
+        CASE 
+            WHEN E.Quantidade = 0 THEN 'Indisponível'
+            WHEN E.Quantidade < 10 THEN 'Baixo'
+            ELSE 'Disponível'
+        END
+    FROM Estoque E
+    JOIN inserted i ON E.IDEstoque = i.IDEstoque;
+END;
+
