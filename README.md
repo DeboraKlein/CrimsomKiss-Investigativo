@@ -52,7 +52,7 @@ _
 
 
 
-[🔗 Acesse o Dashboard Crimson Kiss]([https://app.powerbi.com/view?r=eyJrIjoiZTUwYjRjOTItZDAzZi00YWFhLWE2YjEtZGQwM2I2NWFiOTQyIiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9])
+[🔗 Acesse o Dashboard Crimson Kiss](https://app.powerbi.com/view?r=eyJrIjoiZTUwYjRjOTItZDAzZi00YWFhLWE2YjEtZGQwM2I2NWFiOTQyIiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9)
 
 ---
 
