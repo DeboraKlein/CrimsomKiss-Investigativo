@@ -1,0 +1,44 @@
+-- 🧠 Etapa 2: Views Inteligentes
+
+-- 🔍 1. vw_AlertaAlergia
+-- Filtra avaliações com palavras-chave suspeitas de reação alérgica.
+
+CREATE VIEW vw_AlertaAlergia AS
+SELECT *
+FROM Avaliacoes
+WHERE Comentario LIKE '%alergia%'
+   OR Comentario LIKE '%inchado%'
+   OR Comentario LIKE '%reação%';
+
+SELECT * FROM vw_AlertaAlergia;
+
+-- 🏪 2. vw_EstoqueInconsistente
+-- Mostra lojas que têm estoque real, mas o sistema marca como “Zerado”.
+
+CREATE VIEW vw_EstoqueInconsistente AS
+SELECT *
+FROM Estoque
+WHERE QuantidadeEstoque > 0 AND StatusSistema = 'Zerado';
+
+SELECT * FROM vw_EstoqueInconsistente;
+
+-- 📉 3. vw_QuedaVendas
+-- Agrupa vendas por dia e ordena da menor pra maior — pra detectar a queda.
+
+CREATE VIEW vw_QuedaVendas AS
+SELECT DataVenda, SUM(Quantidade) AS TotalVendido
+FROM Vendas
+GROUP BY DataVenda;
+
+SELECT * FROM vw_QuedaVendas
+ORDER BY TotalVendido ASC;
+
+-- 📣 4. vw_CampanhasSuspeitas
+-- Filtra campanhas pausadas com ROI abaixo de 1.0 — sinal de problema.
+
+CREATE VIEW vw_CampanhasSuspeitas AS
+SELECT *
+FROM CampanhasMarketing
+WHERE ROI < 1.0 AND Status = 'Pausada';
+
+SELECT * FROM vw_CampanhasSuspeitas;
