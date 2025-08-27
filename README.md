@@ -58,5 +58,38 @@ _
 
 ## 📁 Estrutura do Projeto
 
+CrimsonKiss-Investigativo/ 
+├── scripts/ 
+│ ├── create_tables.sql 
+│ ├── insert_data.sql 
+│ ├── views.sql
+│ ├── procedures.sql 
+├── dashboard/ 
+│ ├── imagens/ 
+│ └── layout_pbi.pbix 
+├── docs/
+│ ├── relatorio_investigativo.md 
+│ ├── insights_recomendacoes.md 
+├── README.md
+
+
+---
+
+## 🧪 Tecnologias Utilizadas
+
+- SQL Server
+- Power BI
+- GitHub Codespaces
+- Markdown
+
+---
+
+## ✨ Autoria
+
+Projeto desenvolvido por **Debora**, com foco em análise investigativa de dados, storytelling visual e inteligência de mercado.
+
+---
+
+
 
 
