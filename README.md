@@ -1,4 +1,4 @@
-# GrimsonKiss-Investigativo
+# CrimsonKiss-Investigativo
 
 # 💄 Crimson Kiss — Investigação de Queda nas Vendas
 
