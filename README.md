@@ -1,18 +1,18 @@
 # CrimsonKiss-Investigativo
 
-# 💄 Crimson Kiss — Investigação de Queda nas Vendas
+#  Crimson Kiss — Investigação de Queda nas Vendas
 
 Este projeto analisa a queda brusca nas vendas do batom *Crimson Kiss*, utilizando SQL para estruturação de dados e Power BI para visualização analítica. A investigação revela falhas operacionais, impacto de campanhas de influenciadores e sinais de reputação digital comprometida.
 
 ---
 
-## 📊 Objetivo
+##  Objetivo
 
 Identificar os fatores que levaram à queda de vendas do produto *Crimson Kiss*, correlacionando dados de estoque, campanhas de marketing e avaliações de clientes.
 
 ---
 
-## 🧠 Processo Investigativo
+##  Processo Investigativo
 
 1. **Criação de base de dados**
    - Tabelas: `Estoque`, `Avaliacoes`, `CampanhasMarketing`
@@ -40,7 +40,7 @@ Identificar os fatores que levaram à queda de vendas do produto *Crimson Kiss*,
 
 ---
 
-## 🖼️ Print do Dashboard
+##  Print do Dashboard
 
 > _<img width="1334" height="737" alt="Power BI Desktop 26_08_2025 21_41_23" src="https://github.com/user-attachments/assets/f89c07ea-1201-4c70-bf77-56618db0517c" />
 _
@@ -48,16 +48,16 @@ _
 > 
 ---
 
-## 🔗 Link para o Dashboard Interativo
+##  Link para o Dashboard Interativo
 
 
 
-[🔗 Acesse o Dashboard Crimson Kiss](https://app.powerbi.com/view?r=eyJrIjoiZTUwYjRjOTItZDAzZi00YWFhLWE2YjEtZGQwM2I2NWFiOTQyIiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9)
+[ Acesse o Dashboard Crimson Kiss](https://app.powerbi.com/view?r=eyJrIjoiZTUwYjRjOTItZDAzZi00YWFhLWE2YjEtZGQwM2I2NWFiOTQyIiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9)
 
 ---
 
 
-## 🧪 Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 - SQL Server
 - Power BI
@@ -66,7 +66,7 @@ _
 
 ---
 
-## ✨ Autoria
+##  Autoria
 
 Projeto desenvolvido por **Debora**, com foco em análise investigativa de dados, storytelling visual e inteligência de mercado.
 
